@@ -1,7 +1,7 @@
 {
   "name": "node-gps-parser",
-  "version": "0.0.1",
-  "description": "A GPS sentence parser. Only tested with Adafruit GPS breakout",
+  "version": "0.0.2",
+  "description": "A simple GPS sentence parser",
   "main": "index.js",
   "scripts": {
     "test": "nodeunit test"
