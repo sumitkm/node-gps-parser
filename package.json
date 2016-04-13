@@ -1,0 +1,27 @@
+{
+  "name": "node-gps-parser",
+  "version": "0.0.1",
+  "description": "A GPS sentence parser. Only tested with Adafruit GPS breakout",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodeunit test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumitkm/node-gps-parser.git"
+  },
+  "keywords": [
+    "gps",
+    "adafruit",
+    "parser"
+  ],
+  "author": "Sumit Kumar Maitra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sumitkm/node-gps-parser/issues"
+  },
+  "homepage": "https://github.com/sumitkm/node-gps-parser#readme",
+  "dependencies": {
+    "nodeunit": "^0.9.1"
+  }
+}
