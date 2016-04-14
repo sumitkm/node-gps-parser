@@ -1,10 +1,12 @@
 {
   "name": "node-gps-parser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple GPS sentence parser",
   "main": "index.js",
   "scripts": {
-    "test": "nodeunit test"
+      "pretest": "tsc",
+      "test": "nodeunit test",
+      "build": "tsc"
   },
   "repository": {
     "type": "git",

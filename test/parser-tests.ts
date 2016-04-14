@@ -1,5 +1,7 @@
+/// <reference path="../typings/main/ambient/node/index.d.ts"/>
+
 import { GpsParser as GpsParser } from "../index";
-import * as GpsModel from "../model/GpsModel";
+import { GpsModel as GpsModel } from "../index";
 
 exports['left-pad'] = (test) =>
 {

@@ -1,5 +1,3 @@
-
-
 import * as GpsModel from "./model/GpsModel";
 
 class GpsParser
@@ -44,3 +42,4 @@ class GpsParser
 var gpsParser = new GpsParser();
 
 export { GpsParser };
+export { GpsModel };
