@@ -1,16 +1,20 @@
-# node-gps-parser
+#A simple GPS sentence parser
 
-##A simple GPS sentence parser.
+_**Work in progress!**_
 
-**Work in progress**
-
-Intention is to have it parse all possible sentences sent out by a GPS unit.
+Intention is to have it parse all possible NMEA sentences sent out by a GPS unit.
 Currently I have access to only an Adafruit Ultimate GPS breakout unit, so
 initial release will be for all the sentences it spits out;
 
+**Installation**  
+
+```npm install node-gps-parser --save```
+
+
 *Status*
-GPGGA : Parsing done
-GPRMC : Work in progress
-GPGSA : Planned
-GPGSV : Planned
+
+GPGGA : Parsing done  
+GPRMC : Parsing done   
+GPGSA : Planned  
+GPGSV : Planned  
 GPZDA : Planned

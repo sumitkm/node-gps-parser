@@ -1,6 +1,6 @@
 export interface GpsParseItem
 {
-    verb: string;
+    dataType: string;
     sentence: string;
     values: Array<string>;
 }
