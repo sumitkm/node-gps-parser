@@ -16,8 +16,12 @@ export class GpggaParseItem extends GpsModel.GpsBaseParseItem
 
     constructor(sentence: string)
     {
-        super(sentence);
-        this.dataType = "$GPGGA";
+        super("$GPGGA", sentence);
+        this.parse();
+    }
+    
+    parse()
+    {
         this.time = this.values[0];
         this.gpsPoint = new GpsModel.GpsPoint(this.values[1], this.values[2], this.values[3], this.values[4]);
 

@@ -24,6 +24,18 @@ class GpsParser
         {
             return new GpsModel.GprmcParseItem(sentence);
         }
+        else if(verb == "$GPZDA")
+        {
+            return new GpsModel.GpzdaParseItem(sentence);
+        }
+        else if(verb == "$GPGSV")
+        {
+            return new GpsModel.GpgsvParseItem("$GPGSV", sentence);
+        }
+        else if(verb == "$GPGSA")
+        {
+            return new GpsModel.GpgsaParseItem("$GPGSA", sentence);
+        }
         return null;
     }
 

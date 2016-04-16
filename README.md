@@ -4,17 +4,16 @@ _**Work in progress!**_
 
 Intention is to have it parse all possible NMEA sentences sent out by a GPS unit.
 Currently I have access to only an Adafruit Ultimate GPS breakout unit, so
-initial release will be for all the sentences it spits out;
+initial release will be for all the sentences it spits out.
 
 **Installation**  
 
 ```npm install node-gps-parser --save```
 
-
 *Status*
 
 GPGGA : Parsing done  
 GPRMC : Parsing done   
-GPGSA : Planned  
-GPGSV : Planned  
-GPZDA : Planned
+GPGSA : Work in progress  
+GPGSV : Parsing done  
+GPZDA : Parsing done

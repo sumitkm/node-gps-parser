@@ -7,9 +7,18 @@ export class GpsBaseParseItem implements GpsModel.GpsParseItem
     values: Array<string> = new Array<string>();
     checksum: string;
 
-    constructor(sentence: string)
+    constructor(dataType: string, sentence: string)
+    {
+        this.dataType = dataType;
+        this.reset(sentence);
+    }
+
+    reset = (sentence: string) =>
     {
         this.sentence = sentence;
-        this.values = sentence.split(",");
+        if(this.sentence != null)
+        {
+            this.values = this.sentence.split(",");
+        }
     }
 }

@@ -4,9 +4,9 @@
   "description": "A simple GPS sentence parser",
   "main": "index.js",
   "scripts": {
-      "pretest": "tsc",
-      "test": "nodeunit test",
-      "build": "tsc"
+    "pretest": "tsc",
+    "test": "nodeunit test",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,5 @@
     "url": "https://github.com/sumitkm/node-gps-parser/issues"
   },
   "homepage": "https://github.com/sumitkm/node-gps-parser#readme",
-  "dependencies": {
-    "nodeunit": "^0.9.1"
-  }
+  "dependencies": {}
 }
