@@ -14,6 +14,6 @@ initial release will be for all the sentences it spits out.
 
 GPGGA : Parsing done  
 GPRMC : Parsing done   
-GPGSA : Work in progress  
+GPGSA : Parsing done  
 GPGSV : Parsing done  
 GPZDA : Parsing done

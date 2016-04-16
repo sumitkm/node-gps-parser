@@ -1,6 +1,6 @@
 {
   "name": "node-gps-parser",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple GPS sentence parser",
   "main": "index.js",
   "scripts": {
