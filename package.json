@@ -1,6 +1,6 @@
 {
   "name": "node-gps-parser",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple GPS sentence parser",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,8 @@
     "url": "https://github.com/sumitkm/node-gps-parser/issues"
   },
   "homepage": "https://github.com/sumitkm/node-gps-parser#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@types/nodeunit": "0.0.30"
+  }
 }

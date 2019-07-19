@@ -7,7 +7,5 @@
         "sourceMap": false
     },
     "exclude": [
-        "node_modules",
-        "typings"
-    ]
+        "node_modules"    ]
 }

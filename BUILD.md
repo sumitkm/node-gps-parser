@@ -10,17 +10,9 @@ or if you have TypeScript already, update it
 
 ```npm update typescript```  
 
-** Getting type definitions **   
+**Getting type definitions**   
 
-We can use the ```typings``` package manager to download TypeScript definitions for node and other libraries.
-
-You can install ```typings``` using ```npm```  
-
-```npm install typings -g```
-
-To restore the type definitions run
-
-```typings install```
+Type definitions are now part of packages.json so ```npm install``` will install them as well, no additional steps required.
 
 **Running tests**  
 

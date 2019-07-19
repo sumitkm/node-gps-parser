@@ -1,8 +1,0 @@
-{
-  "name": "node-gps-parser",
-  "version": false,
-  "dependencies": {},
-  "ambientDependencies": {
-    "node": "registry:dt/node#4.0.0+20160330064709"
-  }
-}
