@@ -1,9 +1,8 @@
-/// <reference path="../typings/main/ambient/node/index.d.ts"/>
-
 import { GpsParser as GpsParser } from "../index";
 import { GpsModel as GpsModel } from "../index";
+import { Test } from "nodeunit";
 
-exports['left-pad'] = (test) =>
+export var leftPadTest = (test) =>
 {
     var parser = new GpsParser();
     var parseResult = parser.leftPad("5132.8244", "0", 10);
@@ -11,7 +10,7 @@ exports['left-pad'] = (test) =>
     test.done();
 };
 
-exports['parse-gpgga'] = (test) =>
+export var parseGpggaTest = (test:Test) =>
 {
     var parser = new GpsParser();
     var parseResult = <GpsModel.GpggaParseItem> parser.parse("$GPGGA,094449.000,5132.8244,N,00145.7504,W,1,05,2.49,103.9,M,48.0,M,,*7E");
@@ -27,7 +26,7 @@ exports['parse-gpgga'] = (test) =>
     test.done();
 };
 
-exports['parse-gprmc'] = (test) =>
+export var parseGprmcTest = (test:Test) =>
 {
     var parser = new GpsParser();
     var parseResult = <GpsModel.GprmcParseItem> parser.parse("$GPRMC,094449.000,A,5132.8244,N,00145.7504,W,3.70,190.59,090416,,,A*7B");
@@ -44,7 +43,7 @@ exports['parse-gprmc'] = (test) =>
     test.done();
 };
 
-exports['parse-gpzda'] = (test) =>
+export var parseGpzdaTest = (test: Test) =>
 {
     var parser = new GpsParser();
     var parseResult = <GpsModel.GpzdaParseItem> parser.parse("$GPZDA,094451.000,09,04,2016,,*53");
@@ -56,7 +55,7 @@ exports['parse-gpzda'] = (test) =>
     test.done();
 };
 
-exports['parse-gpgsv'] = (test) =>
+export var parseGpgsvTest = (test: Test) =>
 {
     var parser = new GpsParser();
     var parseResult = <GpsModel.GpgsvParseItem> parser.parse("$GPGSV,3,1,10,13,65,288,18,05,60,200,,30,56,066,19,20,46,292,17*76");
@@ -83,7 +82,7 @@ exports['parse-gpgsv'] = (test) =>
     test.done();
 };
 
-exports['parse-gpgsa'] = (test) =>
+export var parseGpgsaTest = (test: Test) =>
 {
     var parser = new GpsParser();
     var parseResult = <GpsModel.GpgsaParseItem> parser.parse("$GPGSA,A,3,21,30,07,13,20,,,,,,,,2.69,2.49,1.00*06");

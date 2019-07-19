@@ -1,14 +1,13 @@
 "use strict";
-/// <reference path="../typings/main/ambient/node/index.d.ts"/>
 Object.defineProperty(exports, "__esModule", { value: true });
 var index_1 = require("../index");
-exports['left-pad'] = function (test) {
+exports.leftPadTest = function (test) {
     var parser = new index_1.GpsParser();
     var parseResult = parser.leftPad("5132.8244", "0", 10);
     test.equal(parseResult, "05132.8244");
     test.done();
 };
-exports['parse-gpgga'] = function (test) {
+exports.parseGpggaTest = function (test) {
     var parser = new index_1.GpsParser();
     var parseResult = parser.parse("$GPGGA,094449.000,5132.8244,N,00145.7504,W,1,05,2.49,103.9,M,48.0,M,,*7E");
     test.equal(parseResult.gpsPoint.latitudeDegrees, 51.54707333333333);
@@ -22,7 +21,7 @@ exports['parse-gpgga'] = function (test) {
     test.equal(parseResult.unitsOfGeoidalSeparation, 48.0);
     test.done();
 };
-exports['parse-gprmc'] = function (test) {
+exports.parseGprmcTest = function (test) {
     var parser = new index_1.GpsParser();
     var parseResult = parser.parse("$GPRMC,094449.000,A,5132.8244,N,00145.7504,W,3.70,190.59,090416,,,A*7B");
     test.equal(parseResult.gpsPoint.latitudeDegrees, 51.54707333333333);
@@ -36,7 +35,7 @@ exports['parse-gprmc'] = function (test) {
     test.equal(parseResult.magneticVariationDirection, '');
     test.done();
 };
-exports['parse-gpzda'] = function (test) {
+exports.parseGpzdaTest = function (test) {
     var parser = new index_1.GpsParser();
     var parseResult = parser.parse("$GPZDA,094451.000,09,04,2016,,*53");
     test.equal(parseResult.timeStamp, "094451.000");
@@ -46,7 +45,7 @@ exports['parse-gpzda'] = function (test) {
     test.equal(parseResult.currentDate.toUTCString(), new Date(2016, 4, 9, 9, 44, 51, 0).toUTCString());
     test.done();
 };
-exports['parse-gpgsv'] = function (test) {
+exports.parseGpgsvTest = function (test) {
     var parser = new index_1.GpsParser();
     var parseResult = parser.parse("$GPGSV,3,1,10,13,65,288,18,05,60,200,,30,56,066,19,20,46,292,17*76");
     test.equal(parseResult.numberOfSentencesForFullData, 3);
@@ -71,7 +70,7 @@ exports['parse-gpgsv'] = function (test) {
     test.equal(parseResult.satellitesInView[3].snr, 17);
     test.done();
 };
-exports['parse-gpgsa'] = function (test) {
+exports.parseGpgsaTest = function (test) {
     var parser = new index_1.GpsParser();
     var parseResult = parser.parse("$GPGSA,A,3,21,30,07,13,20,,,,,,,,2.69,2.49,1.00*06");
     test.equal(parseResult.fixTypeSelection, "A");
